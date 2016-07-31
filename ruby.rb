@@ -1,11 +1,12 @@
-a = gets.chomp.to_f
 
-if a % 3 == 0 && a % 5 == 0
-  puts "no divisible"
-elsif a % 5 == 0
-  puts "divisible by 5"
-elsif a % 3 == 0
-  puts "cha ching"
-else
-  puts "dude"
+(1..100).each do |num|
+  if num % 3 == 0 && num % 5 == 0
+    puts "OlaBola"
+  elsif num % 5 == 0
+    puts "Bola"
+  elsif num % 3 == 0
+    puts "Ola"
+  else
+    puts "#{num}"
+  end
 end
